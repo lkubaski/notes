@@ -1,0 +1,119 @@
+/*********************************************************************/
+/************************ ONSEN STYLES OVERRIDES *********************/
+/*********************************************************************/
+
+.text-input {
+    background: #0d0d0d;
+}
+
+.bottom-bar {
+    background: black !important; /* overwrite bottom bar default gray background */
+}
+
+.toolbar {
+    background: black !important; /* overwrite bottom bar default gray background */
+}
+
+ons-search-input {
+    width: 100% !important;
+    position:absolute;
+}
+
+ons-list-item {
+    white-space: nowrap; /* so that long lists are displayed on a single row */
+    font-size:18px; /* 16 by default */
+}
+
+/************************************************************/
+/************************ GLOBAL STYLES *********************/
+/************************************************************/
+
+.lk-page {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.lk-hidden {
+    display: none;
+}
+
+/************************************************************/
+/************************ SPECIFIC STYLES *********************/
+/************************************************************/
+
+.lk-title {
+    font-weight: bold !important;
+}
+
+/*
+ * https://stackoverflow.com/questions/38545704/textarea-to-full-size/38545804
+ */
+.lk-note-textarea {
+    width: 100%; /* overwrites ".textarea.width: auto" in dark-onsen-css-components.css*/
+    height: 100%;
+    font-size: 22px; /* overwrites ".textarea.font-size: 16px;" */
+    font-weight: bold;
+}
+/* https://stackoverflow.com/questions/10449031/getting-left-and-right-floats-to-overlap-instead-of-stack */
+/* is there a way not to hardcode "margin-top" ? */
+.lk-search-icon {
+    position:absolute;
+    right:0;
+    margin-top: 2px;
+    z-index: 1; /* otherwise the icon won't be clickable since it will be behind the search bar */
+    padding-left: 20px;  /* to increase hit target */
+}
+
+.lk-sortable-chosen {
+    border: 2px solid rgb(217, 217, 217) !important;
+}
+
+.lk-sortable-handle {
+    padding-right: 10px; /* to increase hit target */
+    padding-left: 10px;
+}
+
+.lk-sort-button {
+    float: left;
+    margin-left: 0;
+    /*height: 44px; */ /* 44px is the hardcoded height of .bottom-bar */
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px; /* to increase hit target */
+    padding-right: 10px; /* to increase hit target */
+}
+
+.lk-sort-button-on {
+    color: #ffa101 !important;
+}
+
+.lk-nb-notes-wrapper {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.lk-nb-notes {
+    padding-top: 12px;
+    padding-bottom: 12px
+}
+
+.lk-new-button {
+    float: right;
+    margin-right: 0;
+    /*height: 44px; */ /* 44px is the hardcoded height of .bottom-bar */
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px; /* to increase hit target */
+    padding-right: 10px; /* to increase hit target */
+}
+
+.lk-delete-button {
+    margin: auto;
+    width: 20px;
+    /*height: 44px;*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px; /* to increase hit target */
+    padding-right: 10px;
+}

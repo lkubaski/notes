@@ -1,0 +1,20 @@
+<ons-page id="viewNote" class="lk-page">
+    <ons-toolbar>
+        <ons-back-button id="backButtonId">Notes</ons-back-button>
+        <!-- Not needed, the note is saved when the textarea loses its focus -->
+        <!--div id="save" class="right back-button back-button__label">
+            Save
+        </div-->
+    </ons-toolbar>
+
+    <input id="id" type="hidden">
+    <!-- https://onsen.io/v2/api/css.html#textarea-category -->
+    <textarea id="noteId" class="textarea lk-note-textarea"></textarea>
+
+    <ons-bottom-toolbar>
+        <div id="deleteButtonId" class="lk-delete-button">
+            <ons-icon icon="fa-trash" size="20px"></ons-icon>
+        </div>
+    </ons-bottom-toolbar>
+
+</ons-page>

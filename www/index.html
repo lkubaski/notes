@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- https://medium.com/the-web-tub/onsen-ui-dark-theme-customization-f4780e71746e -->
+    <link rel="stylesheet" href="css/onsenui.min.css">
+    <link rel="stylesheet" href="css/dark-onsen-css-components.min.css">
+    <!-- this must come AFTER the onsen css: -->
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <title>Todo Manager</title>
+</head>
+<body style="background-color: black">
+<ons-navigator id="navigator">
+    <!-- first page is loaded via ons.ready() -->
+</ons-navigator>
+
+</body>
+<script type="text/javascript" src="cordova.js"></script>
+<script src="css/onsenui.min.js"></script>
+<script src="css/Sortable.js"></script>
+<!-- this needs to be the first one since it defined the logger: -->
+<script type="text/javascript" src="js/util/utils.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/onerror.js"></script>
+<script type="text/javascript" src="js/manager/notesManager.js"></script>
+<script type="text/javascript" src="js/page/homePage.js"></script>
+<script type="text/javascript" src="js/page/viewNote.js"></script>
+</html>

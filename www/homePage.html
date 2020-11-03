@@ -1,0 +1,47 @@
+<ons-page id="homePage" class="lk-page">
+    <!-- disable pull-hook to use sortable library -->
+
+    <ons-pull-hook id="pullHookId">
+    </ons-pull-hook>
+
+    <h1 class="lk-title">Notes</h1>
+    <div>
+        <ons-icon id="searchIconId" icon="fa-times-circle" size="20px"
+                  class="lk-search-icon lk-hidden"></ons-icon>
+        <ons-search-input id="searchId"
+                          placeholder="Search"></ons-search-input>
+    </div>
+    <div style="height: 50px"></div>
+    <ons-list id="notesId">
+        <!-- actual lines are inserted via insertListElement() -->
+        <!-- if you uncomment this, make sure that you disable the list reset in loadNotes() -->
+        <!--
+                    <ons-list-item tappable id="listItem1">
+                        <div class="left lk-sortable-handle">
+                            <ons-icon icon="fa-bars"></ons-icon>
+                        </div>
+                        <div class="center">
+                           THIS IS A VERY VERY LONG SENTENCE, AMAZING ISN'T IT?
+                        </div>
+                    </ons-list-item>
+                    -->
+
+    </ons-list>
+
+    <ons-bottom-toolbar>
+        <!-- https://fontawesome.com/v4.7.0/icons/ -->
+        <ons-icon id="sortButtonId" class="lk-sort-button" icon="fa-bars" size="20px"></ons-icon>
+        <!-- https://fontawesome.com/v4.7.0/icons/ -->
+        <ons-icon id="newButtonId" class="lk-new-button" icon="fa-edit" size="20px"></ons-icon>
+        <!-- TODO: why the hell would we need the gesture detector then??? -->
+        <!--<ons-gesture-detector>-->
+
+        <div class="lk-nb-notes-wrapper">
+            <span id="nbNotesId" class="lk-nb-notes">0 Notes</span>
+        </div>
+
+        <!-- </ons-gesture-detector>-->
+
+    </ons-bottom-toolbar>
+
+</ons-page>
